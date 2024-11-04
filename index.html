@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lokendra Bhat - CV</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <button id="downloadBtn" onclick="downloadCV()">Download CV</button>
+
+    <div class="container" id="cvContent">
+        <header>
+            <h1>Lokendra Bhat</h1>
+            <p class="subtitle">DevOps Engineer</p>
+            <p id="contact">
+                <span><i class="fas fa-envelope"></i> <a href="mailto:lokendrabhat.2022@gmail.com">lokendrabhat.2022@gmail.com</a></span>
+                <span><i class="fas fa-phone"></i> 9809456846</span>
+                <span><i class="fas fa-map-marker-alt"></i> Kathmandu, Nepal</span>
+                <span><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/lokendra-bhat-bb2b6b24a" target="_blank">LinkedIn</a></span>
+                <span><i class="fab fa-github"></i> <a href="https://github.com/LokendraBhat" target="_blank">GitHub</a></span>
+            </p>
+        </header>
+
+        <main>
+            <section id="summary">
+                <h2>Summary</h2>
+                <p>
+                    Experienced DevOps Engineer skilled in containerization, cloud computing, and CI/CD automation, passionate about delivering impactful solutions.
+                </p>
+            </section>
+
+            <section id="experience">
+                <h2>Experience</h2>
+                <div>
+                    <strong>Associate DevOps Engineer</strong> - Amnil Technologies Pvt. Ltd. (01/2024 - Present)
+                    <ul>
+                        <li>Implemented containerization for diverse applications.</li>
+                        <li>Managed database dockerization and backup processes.</li>
+                        <li>Configured Nginx for secure hosting.</li>
+                    </ul>
+                </div>
+                <div>
+                    <strong>AWS re/Start Program Learner</strong> - Amazon Web Services (03/2023 - 06/2023)
+                    <ul>
+                        <li>Learned IT fundamentals and AWS Cloud Computing.</li>
+                        <li>Developed essential soft skills in presentation and teamwork.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="education">
+                <h2>Education</h2>
+                <div>
+                    <strong>Amrit Campus</strong> (2019 - <span id="currentYear"></span>)<br>
+                    B.Sc. in Computer Science and Information Technology
+                </div>
+                <div>
+                    <strong>Radiant Secondary School</strong> (2017 - 2019)<br>
+                    +2 in Science
+                </div>
+            </section>
+
+            <section id="skills">
+                <h2>Skills</h2>
+                <p>Linux, Python, Shell Scripting, AWS, Docker, Jenkins, Git, SQL, Monitoring, IaC, Kubernetes, NGINX, CI/CD</p>
+            </section>
+
+            <section id="certifications">
+                <h2>Certifications</h2>
+                <p>AWS Certified Cloud Practitioner (06/2023 - 06/2026)</p>
+            </section>
+
+            <section id="languages">
+                <h2>Languages</h2>
+                <p>Nepali: Native &bull; English: Professional</p>
+            </section>
+
+            <section id="interests">
+                <h2>Interests</h2>
+                <p>Continuous Learning, Coding, Technology Exploration, Team Collaboration</p>
+            </section>
+        </main>
+    </div>
+
+    <script>
+        function downloadCV() {
+            const element = document.getElementById('cvContent');
+            const options = {
+                margin: 0.4,
+                filename: 'LokendraBhat-CV.pdf',
+                image: { type: 'jpeg', quality: 0.98 },
+                html2canvas: { scale: 2 },
+                jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' }
+            };
+            html2pdf().from(element).set(options).save();
+        }
+
+        document.getElementById("currentYear").textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
