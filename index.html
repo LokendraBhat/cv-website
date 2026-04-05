@@ -1,418 +1,378 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lokendra Bhat - CV</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background: #f5f5f5;
-            padding: 20px;
-        }
-        
-        .container {
-            max-width: 850px;
-            margin: 0 auto;
-            background: white;
-            padding: 50px;
-            box-shadow: 0 0 20px rgba(0,0,0,0.1);
-        }
-        
-        .header {
-            text-align: center;
-            border-bottom: 3px solid #2c3e50;
-            padding-bottom: 20px;
-            margin-bottom: 30px;
-        }
-        
-        .header h1 {
-            font-size: 36px;
-            color: #2c3e50;
-            margin-bottom: 5px;
-        }
-        
-        .header h2 {
-            font-size: 20px;
-            color: #7f8c8d;
-            font-weight: 400;
-            margin-bottom: 15px;
-        }
-        
-        .contact-info {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 20px;
-            margin-top: 15px;
-            font-size: 14px;
-        }
-        
-        .contact-info a {
-            color: #3498db;
-            text-decoration: none;
-        }
-        
-        .contact-info a:hover {
-            text-decoration: underline;
-        }
-        
-        .section {
-            margin-bottom: 30px;
-        }
-        
-        .section-title {
-            font-size: 22px;
-            color: #2c3e50;
-            border-bottom: 2px solid #3498db;
-            padding-bottom: 8px;
-            margin-bottom: 15px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-        
-        .summary {
-            text-align: justify;
-            color: #555;
-            line-height: 1.8;
-        }
-        
-        .project {
-            margin-bottom: 25px;
-        }
-        
-        .project-header {
-            margin-bottom: 10px;
-        }
-        
-        .project-title {
-            font-size: 18px;
-            color: #2c3e50;
-            font-weight: 600;
-        }
-        
-        .project-role {
-            font-style: italic;
-            color: #7f8c8d;
-            font-size: 14px;
-        }
-        
-        .project-duration {
-            color: #95a5a6;
-            font-size: 14px;
-        }
-        
-        .project ul {
-            margin-left: 20px;
-            margin-top: 10px;
-        }
-        
-        .project li {
-            margin-bottom: 8px;
-            color: #555;
-            line-height: 1.6;
-        }
-        
-        .technologies {
-            margin-top: 10px;
-            padding: 8px 12px;
-            background: #ecf0f1;
-            border-radius: 4px;
-            font-size: 13px;
-        }
-        
-        .technologies strong {
-            color: #2c3e50;
-        }
-        
-        .skills-grid {
-            display: grid;
-            grid-template-columns: 1fr 2fr;
-            gap: 15px;
-            margin-top: 10px;
-        }
-        
-        .skill-category {
-            font-weight: 600;
-            color: #2c3e50;
-        }
-        
-        .skill-items {
-            color: #555;
-        }
-        
-        .education-item {
-            margin-bottom: 15px;
-        }
-        
-        .education-degree {
-            font-size: 16px;
-            font-weight: 600;
-            color: #2c3e50;
-        }
-        
-        .education-details {
-            color: #7f8c8d;
-            font-size: 14px;
-        }
-        
-        .download-btn {
-            position: fixed;
-            bottom: 30px;
-            right: 30px;
-            background: #3498db;
-            color: white;
-            padding: 15px 25px;
-            border-radius: 50px;
-            cursor: pointer;
-            font-size: 16px;
-            border: none;
-            box-shadow: 0 4px 15px rgba(52, 152, 219, 0.4);
-            transition: all 0.3s;
-        }
-        
-        .download-btn:hover {
-            background: #2980b9;
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(52, 152, 219, 0.5);
-        }
-        
-        @media print {
-            body {
-                background: white;
-                padding: 0;
-            }
-            
-            .container {
-                box-shadow: none;
-                padding: 30px;
-            }
-            
-            .download-btn {
-                display: none;
-            }
-        }
-    </style>
+<meta charset="UTF-8">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Lato', Arial, sans-serif;
+    font-size: 10.5pt;
+    color: #111;
+    background: #f0f0f0;
+    padding: 24px 12px;
+  }
+
+  .page {
+    max-width: 760px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 48px 52px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.10);
+  }
+
+  .name {
+    text-align: center;
+    font-size: 22pt;
+    font-weight: 900;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+  }
+  .jobtitle {
+    text-align: center;
+    font-size: 11.5pt;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin-bottom: 3px;
+  }
+  .location {
+    text-align: center;
+    font-size: 9.5pt;
+    color: #555;
+    margin-bottom: 8px;
+  }
+  .contacts {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 4px 14px;
+    font-size: 9.5pt;
+    color: #333;
+    margin-bottom: 2px;
+  }
+  .contacts a { color: #333; text-decoration: none; }
+  .contacts a:hover { text-decoration: underline; }
+
+  hr.thick { border: none; border-top: 2px solid #111; margin: 10px 0 0 0; }
+
+  .sec-title {
+    font-size: 10.5pt;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    text-align: center;
+    margin: 16px 0 4px 0;
+  }
+  hr.thin { border: none; border-top: 1px solid #111; margin-bottom: 10px; }
+
+  .summary {
+    font-size: 9.8pt;
+    line-height: 1.65;
+    color: #222;
+    text-align: justify;
+  }
+
+  .company-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 1px;
+  }
+  .company-name { font-weight: 700; font-size: 10.5pt; }
+  .company-loc { font-size: 9.5pt; color: #444; }
+  .period { font-size: 9.5pt; font-weight: 400; }
+
+  .proj { margin-bottom: 12px; }
+  .proj-title { font-weight: 700; font-size: 10pt; }
+  .proj-role { font-style: italic; font-size: 9.5pt; color: #333; margin-bottom: 4px; }
+
+  ul.bullets { padding-left: 18px; margin-bottom: 4px; }
+  ul.bullets li {
+    font-size: 9.5pt;
+    line-height: 1.55;
+    color: #222;
+    margin-bottom: 2px;
+  }
+
+  .tech { font-size: 9pt; color: #333; margin-top: 3px; }
+  .tech strong { font-weight: 700; }
+
+  .skills-table { width: 100%; border-collapse: collapse; }
+  .skills-table td {
+    font-size: 9.5pt;
+    vertical-align: top;
+    padding: 2px 0;
+    line-height: 1.55;
+  }
+  .skills-table td:first-child {
+    font-weight: 700;
+    width: 34%;
+    padding-right: 8px;
+  }
+
+  .edu-block { margin-bottom: 10px; }
+  .edu-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  .edu-deg { font-weight: 700; font-size: 10pt; }
+  .edu-sub { font-size: 9.5pt; color: #333; margin-top: 1px; }
+  .edu-date { font-size: 9.5pt; white-space: nowrap; margin-left: 12px; flex-shrink: 0; }
+
+  .cert-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 9.5pt;
+    margin-bottom: 3px;
+  }
+  .cert-name { font-weight: 700; }
+
+  /* ATTRIBUTES — proper two-column bullet table */
+  .attrs-table { width: 100%; border-collapse: collapse; }
+  .attrs-table td {
+    font-size: 9.5pt;
+    vertical-align: top;
+    padding: 3px 0 3px 0;
+    line-height: 1.55;
+    width: 50%;
+  }
+  .attrs-table td:first-child { padding-right: 20px; }
+  .attr-bullet {
+    display: flex;
+    gap: 6px;
+    align-items: flex-start;
+  }
+  .attr-bullet .dot {
+    margin-top: 1px;
+    flex-shrink: 0;
+    font-size: 10pt;
+    line-height: 1.4;
+  }
+  .attr-bullet strong { font-weight: 700; }
+
+  @media print {
+    body { background: #fff; padding: 0; }
+    .page { box-shadow: none; padding: 36px 44px; }
+  }
+</style>
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <h1>LOKENDRA BHAT</h1>
-            <h2>DevOps Engineer</h2>
-            <div class="contact-info">
-                <span>📞 9809456846</span>
-                <span>✉️ <a href="mailto:mail@lokendrabhat.com.np">mail@lokendrabhat.com.np</a></span>
-                <span>🔗 <a href="https://linkedin.com/in/lokendrabhat" target="_blank">LinkedIn</a></span>
-                <span>🌐 <a href="https://lokendrabhat.com.np" target="_blank">Website</a></span>
-                <span>🏆 <a href="https://credly.com/users/lokendrabhat" target="_blank">Credly</a></span>
-            </div>
-        </div>
+<div class="page">
 
-        <div class="section">
-            <h3 class="section-title">Professional Summary</h3>
-            <p class="summary">
-                Results-driven DevOps Engineer with 2 years of expertise in designing, deploying, and maintaining scalable and reliable applications. Proficient in containerization technologies including Docker, Docker Swarm, and Kubernetes, with strong experience in CI/CD pipeline implementation using Jenkins. Demonstrated ability in cloud infrastructure management, automation, monitoring, and security implementation. Skilled in Linux system administration, scripting (Bash, Python), and implementing comprehensive monitoring solutions using Prometheus and Grafana. Committed to operational excellence, collaborative problem-solving, and continuous learning of emerging technologies and DevOps best practices.
-            </p>
-        </div>
+  <!-- HEADER -->
+  <div class="name">Lokendra Bhat</div>
+  <div class="jobtitle">DevOps / SRE Engineer</div>
+  <div class="location">Kathmandu, Bagmati Province, Nepal</div>
+  <div class="contacts">
+    <span>📞 9809456846</span>
+    <span>✉️ <a href="mailto:lokendrabhat.2022@gmail.com">lokendrabhat.2022@gmail.com</a></span>
+    <span>🔗 <a href="https://linkedin.com/in/lokendrabhat" target="_blank">LinkedIn</a></span>
+    <span>🌐 <a href="https://lokendrabhat.com.np" target="_blank">Website</a></span>
+    <span>🏆 <a href="https://credly.com/users/lokendrabhat" target="_blank">Credly</a></span>
+  </div>
+  <hr class="thick">
 
-        <div class="section">
-            <h3 class="section-title">Professional Experience</h3>
+  <!-- SUMMARY -->
+  <div class="sec-title">Professional Summary</div>
+  <hr class="thin">
+  <p class="summary">
+    DevOps/SRE Engineer with 2+ years of hands-on experience designing, deploying, and maintaining scalable, highly available infrastructure. Expert in container orchestration (Docker, Kubernetes, Docker Swarm), CI/CD pipeline development (Jenkins, GitLab CI), and infrastructure automation (Ansible, Terraform). AWS Certified Cloud Practitioner with proven ability to deliver 99%+ system uptime, implement CIS-benchmark security hardening, and drive 70%+ deployment efficiency gains. Skilled at cross-functional collaboration, disaster recovery planning, and embedding DevOps best practices across the full delivery lifecycle.
+  </p>
 
-            <div class="project">
-                <div class="project-header">
-                    <div class="project-title">Scheduler Application - Auto Recharge from Ncell App</div>
-                    <div class="project-role">Associate DevOps/SRE Engineer</div>
-                    <div class="project-duration">2025 - Present</div>
-                </div>
-                <ul>
-                    <li>Architected and deployed production infrastructure using RKE2 and UAT environment with k3s</li>
-                    <li>Implemented comprehensive CI/CD pipelines using Jenkins for automated deployment of features and updates</li>
-                    <li>Designed and executed backup and logging strategies ensuring rapid disaster recovery capabilities</li>
-                    <li>Established proactive monitoring infrastructure with Prometheus and Grafana for application health, resource utilization, and KPI tracking</li>
-                    <li>Documented and implemented Minimum Baseline Security Standard (MBSS) following CIS benchmark with regular VAPT patching</li>
-                    <li>Collaborated with development teams to maintain operational stability and system reliability</li>
-                </ul>
-                <div class="technologies"><strong>Technologies:</strong> Linux, Kubernetes, RKE2, Jenkins, GitLab, Grafana, Prometheus, CIS Benchmark</div>
-            </div>
+  <!-- WORK EXPERIENCE -->
+  <div class="sec-title">Work Experience</div>
+  <hr class="thin">
 
-            <div class="project">
-                <div class="project-header">
-                    <div class="project-title">Chatbot Enhancement Team</div>
-                    <div class="project-role">Associate DevOps/SRE/System Admin Engineer</div>
-                    <div class="project-duration">2025 - Present</div>
-                </div>
-                <ul>
-                    <li>Configured on-premise server infrastructure optimized for chatbot hosting and operations</li>
-                    <li>Implemented Redis-based session management with replication support for high availability</li>
-                    <li>Configured auto-heal and liveness probes in Docker Swarm for automated failure detection and recovery</li>
-                    <li>Optimized Docker images following best practices, reducing image size from 6GB to 2.5GB (58% reduction)</li>
-                    <li>Deployed Grafana with Loki and Alloy for comprehensive log monitoring and analysis</li>
-                    <li>Configured intelligent alerting system to notify on liveness probe failures with container identification</li>
-                    <li>Achieved 99% uptime through automated monitoring with Uptime Kuma and Grafana alerts</li>
-                    <li>Implemented PostgreSQL replication using Bitnami images and resolved connection pooling issues with PgBouncer</li>
-                </ul>
-                <div class="technologies"><strong>Technologies:</strong> Nginx, Docker, Docker Swarm, Redis, Grafana, Loki, Alloy, Beszel, Uptime Kuma, PostgreSQL, PgBouncer, PgPool</div>
-            </div>
+  <div class="company-row">
+    <span class="company-name">AMNIL Technologies Pvt. Ltd. &nbsp;<span class="company-loc">— Manbhawan, Lalitpur, Nepal</span></span>
+    <span class="period">Jan 2024 – Present</span>
+  </div>
+  <br>
+  <div style="font-weight:700;font-size:10pt;text-decoration:underline;margin-bottom:8px;">Relevant Projects</div>
 
-            <div class="project">
-                <div class="project-header">
-                    <div class="project-title">Ncell Mobile Application</div>
-                    <div class="project-role">Associate DevOps/SRE Engineer</div>
-                    <div class="project-duration">2025 - Present</div>
-                </div>
-                <ul>
-                    <li>Deployed and maintained shared platform infrastructure supporting multiple applications</li>
-                    <li>Ensured server-side security and remediated various vulnerability types through systematic patching</li>
-                    <li>Prepared comprehensive incident reports and performed regular monitoring using Kibana</li>
-                    <li>Maintained master-slave HA Proxy configuration as DMZ for network isolation and traffic management</li>
-                    <li>Collaborated with development and network teams for rapid issue resolution</li>
-                </ul>
-                <div class="technologies"><strong>Technologies:</strong> Nginx, HA Proxy, Kubernetes, Jenkins, Kibana</div>
-            </div>
+  <div class="proj">
+    <div class="proj-title">Scheduler Application – Auto Recharge for Ncell App</div>
+    <div class="proj-role">Associate DevOps/SRE Engineer</div>
+    <ul class="bullets">
+      <li>Provisioned infrastructure via Ansible &amp; Terraform — RKE2 in production, k3s in UAT — reducing deployment time by <strong>70%</strong>.</li>
+      <li>Engineered Jenkins + Ansible CI/CD pipelines for zero-downtime feature and hotfix deployments.</li>
+      <li>Enforced backup and DR strategies achieving RTO under <strong>15 minutes</strong>.</li>
+      <li>Deployed Prometheus + Grafana monitoring stack tracking <strong>50+ KPIs</strong> for proactive health monitoring.</li>
+      <li>Implemented Minimum Baseline Security Standard (MBSS) per CIS Benchmark with recurring VAPT patching.</li>
+    </ul>
+    <div class="tech"><strong>Technologies:</strong> Ansible, Terraform, Linux, Kubernetes, RKE2, k3s, Jenkins, GitLab, Prometheus, Grafana, CIS Benchmark</div>
+  </div>
 
-            <div class="project">
-                <div class="project-header">
-                    <div class="project-title">Payroll Management System</div>
-                    <div class="project-role">Associate DevOps Engineer</div>
-                    <div class="project-duration">2024 - 2025</div>
-                </div>
-                <ul>
-                    <li>Deployed and managed core infrastructure for enterprise Payroll Management System</li>
-                    <li>Implemented secure CI/CD pipelines with Jenkins for automated payroll application deployment</li>
-                    <li>Integrated SonarQube for automated code quality analysis and security vulnerability detection</li>
-                    <li>Designed and implemented Disaster Recovery (DR) setup ensuring business continuity</li>
-                    <li>Configured PostgreSQL replication using Repmgr for high availability</li>
-                    <li>Established high-availability architecture with Docker Swarm for critical payroll processing cycles</li>
-                </ul>
-                <div class="technologies"><strong>Technologies:</strong> Nginx, Docker, Docker Swarm, Jenkins, SonarQube, PostgreSQL, Repmgr</div>
-            </div>
+  <div class="proj">
+    <div class="proj-title">Chatbot Enhancement Team</div>
+    <div class="proj-role">Associate DevOps/SRE/System Admin Engineer</div>
+    <ul class="bullets">
+      <li>Reduced Docker image size by <strong>58%</strong> (6 GB → 2.5 GB) through multi-stage builds and per-layer analysis.</li>
+      <li>Configured Docker Swarm auto-heal and liveness probes, reducing downtime by <strong>95%</strong>.</li>
+      <li>Deployed Grafana + Loki + Alloy centralized logging with smart alerting identifying failing container replicas by ID.</li>
+      <li>Achieved <strong>99% uptime SLA</strong> through automated monitoring with Uptime Kuma and Grafana.</li>
+      <li>Configured Redis replication for session management and resolved PostgreSQL pooling issues with PgBouncer/PgPool.</li>
+    </ul>
+    <div class="tech"><strong>Technologies:</strong> Nginx, Docker, Docker Swarm, Redis, Grafana, Loki, Alloy, Beszel, Uptime Kuma, PostgreSQL, PgBouncer, PgPool</div>
+  </div>
 
-            <div class="project">
-                <div class="project-header">
-                    <div class="project-title">Server Migration Project</div>
-                    <div class="project-role">Associate DevOps Engineer</div>
-                    <div class="project-duration">2024 - 2025</div>
-                </div>
-                <ul>
-                    <li>Containerized applications using Docker to enhance deployment consistency and portability</li>
-                    <li>Successfully migrated applications and databases from cPanel, Linux, and Windows servers to on-premises infrastructure and AWS cloud</li>
-                    <li>Leveraged AWS services including EC2, VPC, RDS, and S3 for cloud-based deployments</li>
-                    <li>Collaborated with developers for troubleshooting and issue resolution during migration</li>
-                    <li>Implemented automated backup and logging strategies using Bash scripting</li>
-                    <li>Modernized legacy applications through containerization and standardized deployment workflows</li>
-                    <li>Configured SSL/TLS for enhanced security across all migrated applications</li>
-                </ul>
-                <div class="technologies"><strong>Technologies:</strong> Nginx, Docker, Docker Swarm, AWS (EC2, VPC, RDS, S3), Jenkins, cPanel, Cloudflare, Bash</div>
-            </div>
+  <div class="proj">
+    <div class="proj-title">Ncell Mobile Application Platform</div>
+    <div class="proj-role">Associate DevOps/SRE Engineer</div>
+    <ul class="bullets">
+      <li>Maintained shared Kubernetes platform supporting a critical customer-facing mobile application.</li>
+      <li>Managed HA Proxy master-slave DMZ gateway handling <strong>5,000+ requests/minute</strong>.</li>
+      <li>Managed Java keystores and SSL certificate lifecycle ensuring ongoing security compliance.</li>
+      <li>Conducted Kibana log monitoring and root-cause analysis; authored detailed incident reports.</li>
+    </ul>
+    <div class="tech"><strong>Technologies:</strong> Kubernetes, HA Proxy, Jenkins, Kibana, Nginx, Java Keystores</div>
+  </div>
 
-            <div class="project">
-                <div class="project-header">
-                    <div class="project-title">Banking Web Application</div>
-                    <div class="project-role">Associate DevOps Engineer</div>
-                    <div class="project-duration">2024 - 2025</div>
-                </div>
-                <ul>
-                    <li>Deployed and maintained critical banking application infrastructure</li>
-                    <li>Implemented comprehensive backup strategies for rapid disaster recovery</li>
-                    <li>Developed Jenkins pipelines for automated CI/CD workflows</li>
-                    <li>Maintained detailed documentation following infrastructure and release best practices</li>
-                    <li>Implemented role-based access control (RBAC) and automated log rotation for optimization</li>
-                    <li>Designed Disaster Recovery servers with database replication and file synchronization</li>
-                </ul>
-                <div class="technologies"><strong>Technologies:</strong> Linux, Nginx, Docker, Docker Swarm, Jenkins, Uptime Kuma, k3s, RKE2, Grafana, PostgreSQL, MySQL, MongoDB</div>
-            </div>
+  <div class="proj">
+    <div class="proj-title">Payment Gateway Application</div>
+    <div class="proj-role">Associate DevOps/SRE Engineer</div>
+    <ul class="bullets">
+      <li>Managed non-dockerized multi-instance HA production environment for a high-availability payment gateway.</li>
+      <li>Developed Bash automation scripts for backup, deployment, rollback, and Nginx access log analysis.</li>
+      <li>Investigated and mitigated bot attacks through Nginx log and server metric analysis.</li>
+      <li>Enforced firewalld security rules ensuring secure inter-instance communication.</li>
+    </ul>
+    <div class="tech"><strong>Technologies:</strong> Bash, Nginx, Linux, Firewalld</div>
+  </div>
 
-            <div class="project">
-                <div class="project-header">
-                    <div class="project-title">ProcessMaker Application Setup</div>
-                    <div class="project-role">Junior DevOps Engineer</div>
-                    <div class="project-duration">2024</div>
-                </div>
-                <ul>
-                    <li>Deployed production-ready systems following DevOps best practices</li>
-                    <li>Implemented automated backup strategies for data protection</li>
-                    <li>Established comprehensive monitoring with Prometheus and Grafana</li>
-                    <li>Configured Prometheus Alertmanager with email notifications for incident response</li>
-                    <li>Created Grafana dashboards for real-time performance tracking and historical analysis</li>
-                </ul>
-                <div class="technologies"><strong>Technologies:</strong> Nginx, Docker, Docker Swarm, Jenkins, Git, GitLab, Grafana, Prometheus</div>
-            </div>
-        </div>
+  <div class="proj">
+    <div class="proj-title">Payroll Management System</div>
+    <div class="proj-role">Associate DevOps/SRE Engineer</div>
+    <ul class="bullets">
+      <li>Designed and deployed core infrastructure for an enterprise Payroll Management System.</li>
+      <li>Built Jenkins CI/CD pipelines with integrated SonarQube SAST scanning for pre-production quality gates.</li>
+      <li>Configured PostgreSQL HA replication via Repmgr; implemented full Disaster Recovery failover.</li>
+      <li>Established Docker Swarm high-availability cluster for uninterrupted payroll processing cycles.</li>
+    </ul>
+    <div class="tech"><strong>Technologies:</strong> Nginx, Docker Swarm, Jenkins, SonarQube, PostgreSQL, Repmgr</div>
+  </div>
 
-        <div class="section">
-            <h3 class="section-title">Technical Skills</h3>
-            <div class="skills-grid">
-                <div class="skill-category">Programming Languages</div>
-                <div class="skill-items">Bash, Python</div>
-                
-                <div class="skill-category">Containerization</div>
-                <div class="skill-items">Docker, Docker Swarm, Kubernetes (k3s, RKE2)</div>
-                
-                <div class="skill-category">CI/CD & Automation</div>
-                <div class="skill-items">Jenkins, GitLab CI, Git, Ansible, Terraform</div>
-                
-                <div class="skill-category">Monitoring & Logging</div>
-                <div class="skill-items">Prometheus, Grafana, Loki, Alloy, Kibana, Uptime Kuma, Beszel</div>
-                
-                <div class="skill-category">Cloud Platforms</div>
-                <div class="skill-items">AWS (EC2, VPC, RDS, S3)</div>
-                
-                <div class="skill-category">Web Servers & Proxies</div>
-                <div class="skill-items">Nginx, Apache, HA Proxy</div>
-                
-                <div class="skill-category">Databases</div>
-                <div class="skill-items">PostgreSQL, MySQL, MongoDB, Redis, PgBouncer, Repmgr</div>
-                
-                <div class="skill-category">Security & Compliance</div>
-                <div class="skill-items">CIS Benchmark, VAPT, SonarQube, Wazuh, Vault, SSL/TLS Configuration</div>
-                
-                <div class="skill-category">Operating Systems</div>
-                <div class="skill-items">Linux (Enterprise Administration), Windows Server</div>
-                
-                <div class="skill-category">Core Competencies</div>
-                <div class="skill-items">DevOps Engineering, SRE, System Administration, Infrastructure Automation, Disaster Recovery, High Availability Architecture, Performance Optimization</div>
-            </div>
-        </div>
+  <div class="proj">
+    <div class="proj-title">Server Migration Project</div>
+    <div class="proj-role">Associate DevOps Engineer</div>
+    <ul class="bullets">
+      <li>Containerized <strong>15+ applications</strong> with Docker, standardizing deployment workflows across environments.</li>
+      <li>Migrated apps and databases from cPanel/Windows Server to on-premise and AWS (EC2, VPC, RDS, S3).</li>
+      <li>Resolved <strong>50+ compatibility issues</strong> in partnership with development teams during migration.</li>
+      <li>Automated backup and log rotation via Bash; enforced SSL/TLS across all migrated workloads.</li>
+    </ul>
+    <div class="tech"><strong>Technologies:</strong> Nginx, Docker, Docker Swarm, AWS (EC2, VPC, RDS, S3), Jenkins, cPanel, Cloudflare, Bash</div>
+  </div>
 
-        <div class="section">
-            <h3 class="section-title">Education</h3>
-            <div class="education-item">
-                <div class="education-degree">Bachelor of Science in Computer Science and Information Technology (B.Sc. CSIT)</div>
-                <div class="education-details">Amrit Campus | 2019 - 2023</div>
-            </div>
-        </div>
+  <div class="proj">
+    <div class="proj-title">Banking Web Application</div>
+    <div class="proj-role">Associate DevOps Engineer</div>
+    <ul class="bullets">
+      <li>Deployed and managed critical banking infrastructure with RBAC enforcement and automated log rotation.</li>
+      <li>Developed Jenkins CI/CD pipelines with security scanning and automated testing gates.</li>
+      <li>Maintained RKE2/k3s cluster operations and multi-database environments (PostgreSQL, MySQL, MongoDB).</li>
+      <li>Configured DR servers with database replication and file synchronization for rapid failover.</li>
+    </ul>
+    <div class="tech"><strong>Technologies:</strong> Linux, Nginx, Docker, Docker Swarm, Jenkins, Uptime Kuma, k3s, RKE2, Grafana, PostgreSQL, MySQL, MongoDB</div>
+  </div>
+
+  <div class="proj" style="margin-bottom:0">
+    <div class="proj-title">ProcessMaker Application Setup</div>
+    <div class="proj-role">Junior DevOps Engineer &nbsp;|&nbsp; 2024</div>
+    <ul class="bullets">
+      <li>Deployed production-ready environment following DevOps best practices with CI/CD and automated backups.</li>
+      <li>Created Grafana dashboards for real-time performance tracking and historical analysis.</li>
+      <li>Configured Prometheus Alertmanager with email notification integration for faster incident response.</li>
+    </ul>
+    <div class="tech"><strong>Technologies:</strong> Nginx, Docker, Docker Swarm, Jenkins, Git, GitLab, Grafana, Prometheus</div>
+  </div>
+
+  <!-- TECHNICAL SKILLS -->
+  <div class="sec-title">Technical Skills</div>
+  <hr class="thin">
+  <table class="skills-table">
+    <tr><td>Domain</td><td>DevOps Engineering, SRE, Linux System Administration, Server Hardening, CI/CD Pipeline Management, Infrastructure Automation, Monitoring &amp; Logging, Cloud Management (AWS), Security Implementation, Infrastructure as Code, Configuration Management</td></tr>
+    <tr><td>Containers &amp; Orchestration</td><td>Docker, Docker Swarm, Kubernetes (RKE2, k3s), Container Optimization</td></tr>
+    <tr><td>CI/CD &amp; Automation</td><td>Jenkins, GitLab CI, Ansible, Terraform, Git</td></tr>
+    <tr><td>Monitoring &amp; Logging</td><td>Prometheus, Grafana, Loki, Alloy, Kibana, Uptime Kuma, Beszel, Dozzle</td></tr>
+    <tr><td>Cloud Platforms</td><td>AWS (EC2, VPC, RDS, S3, IAM) — AWS Certified Cloud Practitioner</td></tr>
+    <tr><td>Web Servers &amp; Proxies</td><td>Nginx, Apache, HA Proxy, Cloudflare, DMZ Architecture</td></tr>
+    <tr><td>Databases &amp; Caching</td><td>PostgreSQL (Replication, Repmgr, PgBouncer, PgPool), MySQL, MongoDB, Redis</td></tr>
+    <tr><td>Security &amp; Compliance</td><td>CIS Benchmark, VAPT Remediation, Server Hardening, SSL/TLS, RBAC, Wazuh, Vault, MBSS, SonarQube</td></tr>
+    <tr><td>Scripting</td><td>Bash, Python</td></tr>
+    <tr><td>Networking</td><td>Networking Fundamentals, Firewalls (firewalld), VPNs, NFS, Security Best Practices</td></tr>
+  </table>
+
+  <!-- EDUCATION & TRAINING -->
+  <div class="sec-title">Education &amp; Training</div>
+  <hr class="thin">
+
+  <div class="edu-block">
+    <div class="edu-row">
+      <div class="edu-deg">Master of Information Technology (MIT) &nbsp;<span style="font-weight:400;font-size:9.5pt;color:#333;">— In Progress</span></div>
+      <span class="edu-date">2024 – Present</span>
     </div>
+    <div class="edu-sub">Amrit Campus, Tribhuvan University</div>
+  </div>
 
-    <button class="download-btn" onclick="downloadPDF()">📥 Download PDF</button>
+  <div class="edu-block">
+    <div class="edu-row">
+      <div class="edu-deg">Bachelor of Science in Computer Science and Information Technology (B.Sc. CSIT)</div>
+      <span class="edu-date">2019 – 2023</span>
+    </div>
+    <div class="edu-sub">Amrit Campus, Tribhuvan University &nbsp;·&nbsp; <strong>GPA: 81.36%</strong></div>
+  </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
-    <script>
-        function downloadPDF() {
-            const element = document.querySelector('.container');
-            const button = document.querySelector('.download-btn');
-            
-            button.style.display = 'none';
-            
-            const opt = {
-                margin: [0.5, 0.5, 0.5, 0.5],
-                filename: 'Lokendra_Bhat_CV.pdf',
-                image: { type: 'jpeg', quality: 0.98 },
-                html2canvas: { scale: 2, useCORS: true },
-                jsPDF: { unit: 'in', format: 'a4', orientation: 'portrait' }
-            };
-            
-            html2pdf().set(opt).from(element).save().then(() => {
-                button.style.display = 'block';
-            });
-        }
-    </script>
+  <div class="edu-block" style="margin-bottom:0">
+    <div class="edu-row">
+      <div class="edu-deg">AWS re/Start Training Program Graduate</div>
+      <span class="edu-date">2023</span>
+    </div>
+    <div class="edu-sub">Amazon Web Services, Kathmandu, Nepal &nbsp;·&nbsp; Full attendance &nbsp;·&nbsp; Earned AWS Cloud Practitioner certification</div>
+  </div>
+
+  <!-- CERTIFICATIONS -->
+  <div class="sec-title">Certifications</div>
+  <hr class="thin">
+  <div class="cert-row"><span class="cert-name">AWS Certified Cloud Practitioner</span><span>Amazon Web Services &nbsp;|&nbsp; July 2023 – July 2026</span></div>
+  <div class="cert-row"><span class="cert-name">AWS re/Start Graduate</span><span>Amazon Web Services &nbsp;|&nbsp; July 2023</span></div>
+  <div class="cert-row"><span class="cert-name">AWS Academy Cloud Foundations</span><span>Amazon Web Services &nbsp;|&nbsp; July 2023</span></div>
+  <div class="cert-row"><span class="cert-name">AWS Educate: Getting Started with Databases</span><span>Amazon Web Services &nbsp;|&nbsp; September 2024</span></div>
+
+  <!-- PROFESSIONAL ATTRIBUTES -->
+  <div class="sec-title">Professional Attributes</div>
+  <hr class="thin">
+  <table class="attrs-table">
+    <tr>
+      <td>
+        <div class="attr-bullet"><span class="dot">●</span><span><strong>Problem-Solving:</strong> Structured root-cause analysis to resolve complex infrastructure issues quickly and prevent recurrence.</span></div>
+      </td>
+      <td>
+        <div class="attr-bullet"><span class="dot">●</span><span><strong>Automation-First:</strong> Consistently eliminates manual, repetitive operations through scripting and Infrastructure as Code.</span></div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div class="attr-bullet"><span class="dot">●</span><span><strong>Security-Minded:</strong> Proactively embeds CIS/VAPT compliance and server hardening into every delivery pipeline.</span></div>
+      </td>
+      <td>
+        <div class="attr-bullet"><span class="dot">●</span><span><strong>Collaboration:</strong> Effective cross-functional partner to development, network, and security teams in agile environments.</span></div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div class="attr-bullet"><span class="dot">●</span><span><strong>Continuous Learning:</strong> Stays current with emerging DevOps tools, cloud-native technologies, and industry best practices.</span></div>
+      </td>
+      <td>
+        <div class="attr-bullet"><span class="dot">●</span><span><strong>Documentation:</strong> Produces clear, comprehensive technical runbooks, SOPs, and incident reports.</span></div>
+      </td>
+    </tr>
+  </table>
+
+</div>
 </body>
 </html>
